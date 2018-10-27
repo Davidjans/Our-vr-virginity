@@ -19,6 +19,10 @@ public class InteractableItem : MonoBehaviour
 	private HandController m_AttachedHand;
 
 	private Transform m_InteractionPoint;
+
+	private bool m_BeingThrown;
+	private Vector3 m_ThrownPosition;
+	public float m_ThrownDistance;
 	private void Start()
 	{
 		m_RigidBody = GetComponent<Rigidbody>();
@@ -53,21 +57,33 @@ public class InteractableItem : MonoBehaviour
 		m_InteractionPoint.position = hand.transform.position;
 		m_InteractionPoint.rotation = hand.transform.rotation;
 		m_InteractionPoint.SetParent(transform, true);
-
+		Debug.Log("Interaction Started");
 		m_CurrentlyInteracting = true;
 	}
 
 	public void EndInteraction(HandController hand)
 	{
-		if( hand == m_AttachedHand)
+		Debug.Log("Interaction Ended");
+		if ( hand == m_AttachedHand)
 		{
 			m_AttachedHand = null;
 			m_CurrentlyInteracting = false;
+			m_BeingThrown = true;
+			m_ThrownPosition = transform.position;
 		}
 	}
 
 	public bool IsInteracting()
 	{
 		return m_CurrentlyInteracting;
+	}
+
+	private void OnCollisionEnter(Collision collision)
+	{
+		if(m_BeingThrown == true)
+		{
+			m_ThrownDistance = Vector3.Distance(m_ThrownPosition, transform.position);
+			m_BeingThrown = false;
+		}
 	}
 }

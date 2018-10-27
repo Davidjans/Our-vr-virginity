@@ -30,7 +30,7 @@ public class HandController : MonoBehaviour {
             return;
         }
 
-        if (m_Controller.GetPressDown(m_GripButton))
+        if (m_Controller.GetPressDown(m_TriggerButton))
         {
 			float minDistance = float.MaxValue;
 			float distance;
@@ -53,13 +53,8 @@ public class HandController : MonoBehaviour {
 				}
 				m_InteractingItem.BeginInteraction(this);
 			}
-
-			if (m_Controller.GetPress(m_GripButton) && m_InteractingItem != null)
-			{
-				m_InteractingItem.EndInteraction(this);
-			}
 		}
-        if (m_Controller.GetPressUp(m_GripButton))
+        if (m_Controller.GetPressUp(m_TriggerButton))
         {
 			m_InteractingItem.EndInteraction(this);
 		}
