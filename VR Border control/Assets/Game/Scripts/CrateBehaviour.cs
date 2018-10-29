@@ -12,6 +12,8 @@ public class CrateBehaviour : MonoBehaviour {
 	public int m_ItemAmmount;
 	public List<GameObject> m_ItemsInCrate = new List<GameObject>();
 	private List<BoxedItem> m_ItemsInBoxScript = new List<BoxedItem>();
+
+	private int m_TempScoreKeeper;
 	// Use this for initialization
 	void Start () { 
 		m_PossibleItems = GameObject.Find("PossibleItems").GetComponent<PossibleItems>();
@@ -27,9 +29,27 @@ public class CrateBehaviour : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	public void m_CheckWhatPassed()
+	{
+		for (int i = 0; i < m_ItemsInCrate.Count; i++)
+		{
+			if(m_ItemsInBoxScript[i].m_AllowedThrough == true && m_ItemsInBoxScript[i].m_InBox == true)
+			{
+				m_TempScoreKeeper += 100;
+			}
+			else if (m_ItemsInBoxScript[i].m_AllowedThrough == true && m_ItemsInBoxScript[i].m_InBox == false)
+			{
+				m_TempScoreKeeper -= 100;
+			}
+			else if (m_ItemsInBoxScript[i].m_AllowedThrough == false && m_ItemsInBoxScript[i].m_InBox == false)
+			{
+				m_TempScoreKeeper += 100;
+			}
+			else if (m_ItemsInBoxScript[i].m_AllowedThrough == false && m_ItemsInBoxScript[i].m_InBox == true)
+			{
+				m_TempScoreKeeper -= 100;
+			}
+		}
 	}
 
 	private void OnTriggerExit(Collider other)

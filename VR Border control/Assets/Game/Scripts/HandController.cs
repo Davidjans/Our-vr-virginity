@@ -59,12 +59,12 @@ public class HandController : MonoBehaviour {
 			m_InteractingItem.EndInteraction(this);
 		}
 
-        if (m_Controller.GetPressDown(m_TriggerButton))
+        if (m_Controller.GetPressDown(m_GripButton))
         {
 			
 
 		}
-        if (m_Controller.GetPressUp(m_TriggerButton))
+        if (m_Controller.GetPressUp(m_GripButton))
         {
 			
 		}
@@ -72,6 +72,7 @@ public class HandController : MonoBehaviour {
 
         if (m_Controller.GetPressDown(m_TouchpadButton))
         {
+			FindObjectOfType<CrateBehaviour>().m_CheckWhatPassed();
         }
         if (m_Controller.GetPressUp(m_TouchpadButton))
         {
