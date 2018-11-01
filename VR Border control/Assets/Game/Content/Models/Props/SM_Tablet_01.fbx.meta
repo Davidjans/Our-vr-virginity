@@ -1,14 +1,51 @@
 fileFormatVersion: 2
-guid: 63b109238905b3947957384cc12ac1e4
+guid: 7ec2d0887dcb95e40aba9aa5da07ee22
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Extinguisher_01
+    100000: Antenna1
+    100002: Battery
+    100004: Power
+    100006: Power_Switch
+    100008: //RootNode
+    100010: Switch_Base
+    100012: Top_Buttons
+    100014: Volume
+    100016: Antenna
+    400000: Antenna1
+    400002: Battery
+    400004: Power
+    400006: Power_Switch
+    400008: //RootNode
+    400010: Switch_Base
+    400012: Top_Buttons
+    400014: Volume
+    400016: Antenna
+    2100000: m_tablet_01
+    2300000: Antenna1
+    2300002: Battery
+    2300004: Power
+    2300006: Power_Switch
+    2300008: Switch_Base
+    2300010: Top_Buttons
+    2300012: Volume
+    2300014: Antenna
+    3300000: Antenna1
+    3300002: Battery
+    3300004: Power
+    3300006: Power_Switch
+    3300008: Switch_Base
+    3300010: Top_Buttons
+    3300012: Volume
+    3300014: Antenna
+    4300000: Switch_Base
+    4300002: Antenna1
+    4300004: Power
+    4300006: Volume
+    4300008: Battery
+    4300010: Top_Buttons
+    4300012: Power_Switch
+    4300014: Antenna
   externalObjects: {}
   materials:
     importMaterials: 0
