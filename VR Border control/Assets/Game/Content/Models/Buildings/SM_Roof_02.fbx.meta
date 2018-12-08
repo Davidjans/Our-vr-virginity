@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 53955b79f1e2b8d4db551fb256aa5d00
+guid: 4df04cf841174ab49967818f58ba7868
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: SM_RoofMid_03
+    4300000: SM_Roof_02
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -65,7 +65,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 0
     normalCalculationMode: 4
   importAnimation: 0
   copyAvatar: 0

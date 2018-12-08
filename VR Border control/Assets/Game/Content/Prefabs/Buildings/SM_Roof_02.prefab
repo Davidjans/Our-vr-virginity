@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1308116170537542}
+  m_RootGameObject: {fileID: 1059894623319398}
   m_IsPrefabAsset: 1
---- !u!1 &1308116170537542
+--- !u!1 &1059894623319398
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4365440780324504}
-  - component: {fileID: 33328332188630742}
-  - component: {fileID: 23601563656401928}
+  - component: {fileID: 4738315341534324}
+  - component: {fileID: 33986539761772552}
+  - component: {fileID: 23981717513684792}
   m_Layer: 0
   m_Name: SM_Roof_02
   m_TagString: Untagged
@@ -28,12 +28,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4365440780324504
+--- !u!4 &4738315341534324
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1308116170537542}
+  m_GameObject: {fileID: 1059894623319398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -41,12 +41,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23601563656401928
+--- !u!23 &23981717513684792
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1308116170537542}
+  m_GameObject: {fileID: 1059894623319398}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -76,10 +76,10 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33328332188630742
+--- !u!33 &33986539761772552
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1308116170537542}
+  m_GameObject: {fileID: 1059894623319398}
   m_Mesh: {fileID: 4300000, guid: ef8c4f17258c49a4496cf4fa13ca7a61, type: 3}
